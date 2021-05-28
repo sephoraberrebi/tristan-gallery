@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(0, 247, 255);
+    font-family: 'Bangers', 'cursive';
+    margin: 0 auto;
+}
+h1 {
+    color : tomato;
+    font-size: 100px;
+    text-align: center;
+}
+.container {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 10px;
+}
+h2 {
+    color: tomato;
+}
+.card {
+    background-color: rgb(240, 236, 236);
+}
+img {
+    box-shadow: rgb(90, 88, 88) 3px 4px 10px;
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+}
+footer {
+    height: 60px;
+    text-align: center;
+    background-color: tomato;
+    color: khaki;
+    line-height: 60px;
+}
+
+@media only screen and (max-width:600px) {
+    .container {
+    background-color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 10px;
+    }
+}
+@media only screen and (max-width:900px) {
+    .container {
+    background-color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 10px;
+    }
+}
